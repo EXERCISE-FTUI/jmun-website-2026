@@ -88,7 +88,7 @@ export const ImageCarousel: React.FC<CarouselProps> = ({
     prevArrow: <PrevArrow />,
     nextArrow: <NextArrow />,
     pauseOnHover: true,
-    lazyLoad: "ondemand",
+    lazyLoad: "progressive",
     appendDots: (dots: React.ReactNode): JSX.Element => (
       <div>
         <ul className="flex justify-center gap-1 absolute bottom-4 left-0 right-0">
