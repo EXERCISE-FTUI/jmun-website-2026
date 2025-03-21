@@ -33,17 +33,6 @@ export const councils: Council[] = [
       "Myanmar has faced a troubled history of internal military conflicts, culminating in its worst humanitarian crisis following a military coup in 2021. Since 1962 the military Junta has maintained power through violence against civilians and the government, exemplified by the brutal suppression of the 1988 protests. Ethnic minorities were promised autonomy in the Panglong Agreement, but they became the targets of “Burmanization” which suppressed their culture, language, and religion. Despite introducing a 2008 constitution to allow limited democracy, the military retained power, fueling ongoing conflicts like the Rohingya genocide. The coup overthrew the National Unity Government (NUG), sparking civil war as defense groups and Ethnic Armed Minorities (EAMs) resisted the junta. Efforts for peace have failed, leaving Myanmar in deepening chaos.",
   },
   {
-    organization: "FOM",
-    logo: fomLogo, // Formula 1 logo
-    topic:
-      "Beyond the Cockpit: The Question of Granting More Decision-Making Power to Drivers",
-    participant: "single",
-    level: "intermediate",
-    location: "offline",
-    description:
-      "The Formula One Management (FOM) council delves into the question of granting drivers more decision-making power, a topic central to the future of motorsport governance. While the governance structure of Formula 1 has traditionally prioritized team principals, engineers, and corporate stakeholders, drivers—equipped with unparalleled on-track experience—have increasingly called for a voice in shaping safety regulations, car design, and race strategies. Advocates argue that their involvement could modernize the sport and address emerging challenges like sustainability and fan engagement, while critics warn of potential disruptions to the established governance model. As FOM CEO Stefano Domenicali advocates for innovation while preserving the sport’s competitive integrity, this council tasks delegates with finding a balance. By examining perspectives from all stakeholders i.e. drivers, team principals, engineers, corporate partners, the FIA, the GPDA, the FOM, the media representative and the academic analyst. delegates must determine to what extent driver involvement should influence Formula 1’s governance to ensure its continued evolution.",
-  },
-  {
     organization: "African Union",
     logo: auLogo, // African Union emblem with map of Africa
     topic:
@@ -53,6 +42,17 @@ export const councils: Council[] = [
     location: "offline",
     description:
       "The remnant of colonialism is still going strong in West and Central Africa with the CFA franc, a currency implemented when French was in the process of decolonizing, that is pegged to the French currency of Euro today. This gives the European Central Bank effective control of the monetary policy of the 14 countries who still use the currency. Under the agreement that governs the use of the currency, 50% of each states' foreign currency reserve also rests within French control. With the growing calls of CFA franc adopter states to ditch the currency, the African Union must find a way to position itself to aid the transition and minimize the adverse side effect that a transition may bring.",
+  },
+  {
+    organization: "FOM",
+    logo: fomLogo, // Formula 1 logo
+    topic:
+      "Beyond the Cockpit: The Question of Granting More Decision-Making Power to Drivers",
+    participant: "single",
+    level: "intermediate",
+    location: "offline",
+    description:
+      "The Formula One Management (FOM) council delves into the question of granting drivers more decision-making power, a topic central to the future of motorsport governance. While the governance structure of Formula 1 has traditionally prioritized team principals, engineers, and corporate stakeholders, drivers—equipped with unparalleled on-track experience—have increasingly called for a voice in shaping safety regulations, car design, and race strategies. Advocates argue that their involvement could modernize the sport and address emerging challenges like sustainability and fan engagement, while critics warn of potential disruptions to the established governance model. As FOM CEO Stefano Domenicali advocates for innovation while preserving the sport’s competitive integrity, this council tasks delegates with finding a balance. By examining perspectives from all stakeholders i.e. drivers, team principals, engineers, corporate partners, the FIA, the GPDA, the FOM, the media representative and the academic analyst. delegates must determine to what extent driver involvement should influence Formula 1’s governance to ensure its continued evolution.",
   },
   {
     organization: "Arab League",
