@@ -1,5 +1,4 @@
 import React from "react";
-import Header from "./components/Header";
 import HeaderPhoto from "./components/home/HeaderPhoto";
 import CouncilSection from "./components/home/CouncilSection";
 import WelcomingRemarks from "./components/home/WelcomingRemarks";
@@ -9,7 +8,6 @@ import GallerySection from "./components/home/GallerySection";
 function HomePage() {
   return (
     <main className="w-full min-h-screen flex flex-col items-center justify-start bg-gradient-to-b from-red-dark to-red-bright">
-      <Header />
       <HeaderPhoto photoUrl="https://www.jakartamun.org/_next/image?url=%2Fbackgrounds%2Fbhi.webp&w=3840&q=100">
         <div className="w-full h-full flex flex-col items-center justify-center font-plus-jakarta gap-2 box-border px-8 md:px-0">
           <h1 className="text-white text-center text-2xl md:text-7xl font-extrabold">

@@ -1,5 +1,6 @@
 "use client";
 
+import Link from "next/link";
 import React, { useState } from "react";
 
 const Header = () => {
@@ -21,20 +22,20 @@ const Header = () => {
       <div className="container flex items-center justify-between">
         {/* Logo */}
         <div className="flex items-center">
-          <a href="#" className="text-xl font-semibold">
+          <Link href="/" className="text-xl font-semibold">
             <img src={"/top-logo.png"} className="w-24 lg:w-36 h-auto"></img>
-          </a>
+          </Link>
         </div>
         <div className="grow"></div>
 
         {/* Desktop Menu */}
         <div className="hidden md:flex items-center gap-8 font-plus-jakarta">
-          <a href="#" className="hover:scale-105 transition-all">
+          <Link href="/about" className="hover:scale-105 transition-all">
             About
-          </a>
-          <a href="#" className="hover:scale-105 transition-all">
+          </Link>
+          <Link href="#" className="hover:scale-105 transition-all">
             Councils
-          </a>
+          </Link>
           {/* <a href="#" className="hover:scale-105 transition-all">
             Press Articles
           </a>
@@ -47,12 +48,12 @@ const Header = () => {
           >
             Contact Us
           </button>
-          <a
+          <Link
             href="#"
             className="bg-white text-pink-dark px-4 py-2 rounded-lg font-medium hover:bg-pink-light transition-all"
           >
             Early Bird Registration
-          </a>
+          </Link>
         </div>
 
         {/* Mobile Burger Menu Button */}
@@ -101,18 +102,18 @@ const Header = () => {
         }`}
       >
         <div className="w-full flex flex-col gap-4 bg-transparent">
-          <a
-            href="#"
+          <Link
+            href="/about"
             className="text-white py-2 hover:text-gray-300 transition-all transform hover:translate-x-2"
           >
             About
-          </a>
-          <a
+          </Link>
+          <Link
             href="#"
             className="text-white py-2 hover:text-gray-300 transition-all transform hover:translate-x-2"
           >
             Councils
-          </a>
+          </Link>
           {/* <a
             href="#"
             className="text-white py-2 hover:text-gray-300 transition-all transform hover:translate-x-2"
@@ -131,12 +132,12 @@ const Header = () => {
           >
             Contact Us
           </button>
-          <a
+          <Link
             href="#"
             className="bg-white text-pink-dark hover:bg-pink-light py-2 px-4 rounded-lg text-center transition-all mt-2"
           >
             Early Bird Registration
-          </a>
+          </Link>
         </div>
       </div>
     </header>
