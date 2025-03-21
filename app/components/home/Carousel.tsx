@@ -1,8 +1,10 @@
-import React, { JSX } from "react";
+import React, { JSX, useMemo } from "react";
 import Slider, { Settings, CustomArrowProps } from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
+import useBreakpoint from "use-breakpoint";
+import { BREAKPOINTS } from "@/utils";
 
 // Define strict types
 type ImageType = Readonly<{
@@ -76,28 +78,32 @@ export const ImageCarousel: React.FC<CarouselProps> = ({
   speed = 500,
   className = "",
 }) => {
+  const { breakpoint } = useBreakpoint(BREAKPOINTS, "desktop");
+
   // Strictly typed settings object
-  const settings: Settings = {
-    dots: dots,
-    infinite: infinite,
-    speed: speed,
-    slidesToShow: 3,
-    slidesToScroll: 1,
-    autoplay: autoplay,
-    autoplaySpeed: autoplaySpeed,
-    prevArrow: <PrevArrow />,
-    nextArrow: <NextArrow />,
-    pauseOnHover: true,
-    lazyLoad: "progressive",
-    appendDots: (dots: React.ReactNode): JSX.Element => (
-      <div>
-        <ul className="flex justify-center gap-1 absolute bottom-4 left-0 right-0">
-          {dots}
-        </ul>
-      </div>
-    ),
-    customPaging: (): JSX.Element => <CustomDot />,
-  };
+  const settings: Settings = useMemo(() => {
+    return {
+      dots: dots,
+      infinite: infinite,
+      speed: speed,
+      slidesToShow: breakpoint === "desktop" ? 3 : 1,
+      slidesToScroll: 1,
+      autoplay: autoplay,
+      autoplaySpeed: autoplaySpeed,
+      prevArrow: <PrevArrow />,
+      nextArrow: <NextArrow />,
+      pauseOnHover: true,
+      lazyLoad: "progressive",
+      appendDots: (dots: React.ReactNode): JSX.Element => (
+        <div>
+          <ul className="flex justify-center gap-1 absolute bottom-4 left-0 right-0">
+            {dots}
+          </ul>
+        </div>
+      ),
+      customPaging: (): JSX.Element => <CustomDot />,
+    };
+  }, [dots, infinite, speed, autoplay, autoplaySpeed, breakpoint]);
 
   return (
     <div
