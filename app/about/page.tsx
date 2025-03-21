@@ -9,13 +9,14 @@ function AboutPage() {
             ABOUT JMUN
           </h1>
           <p className="text-white font-plus-jakarta text-justify font-medium md:text-lg">
-            Jakarta Model United Nations (“JMUN”) is Indonesia&apos;s largest
-            international Model United Nations (“MUN”) conference, which was
-            first conducted by ISAFIS in Jakarta in 2011. JMUN allows members to
-            engage in the difficulties of international negotiation and
-            diplomacy. Participants discuss global issues in a setting that
-            simulates the processes of a United Nations conference while acting
-            as representatives of their assigned countries. This experience
+            Jakarta Model United Nations (<strong>“JMUN”</strong>) is
+            Indonesia&apos;s largest international Model United Nations (
+            <strong>“MUN”</strong>) conference, which was first conducted by
+            ISAFIS in Jakarta in 2011. JMUN allows members to engage in the
+            difficulties of international negotiation and diplomacy.
+            Participants discuss global issues in a setting that simulates the
+            processes of a United Nations conference while acting as
+            representatives of their assigned countries. This experience
             provides delegates with important insights into the UN&apos;s
             functioning while actively contributing to the resolution of
             critical international concerns.
