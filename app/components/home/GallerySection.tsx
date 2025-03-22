@@ -2,7 +2,27 @@
 
 import React from "react";
 import { ImageCarousel } from "./Carousel";
-import { carouselPhotos } from "@/carouselPhotos";
+import firstPhoto from "@/assets/carousel-photos/DSCF0890.jpeg";
+import secondPhoto from "@/assets/carousel-photos/ADS_0008.jpeg";
+import thirdPhoto from "@/assets/carousel-photos/ADS_0024.jpeg";
+import fourthPhoto from "@/assets/carousel-photos/DSC08049.jpeg";
+import fifthPhoto from "@/assets/carousel-photos/DSC08056.jpeg";
+import sixthPhoto from "@/assets/carousel-photos/DSC08756.jpeg";
+import seventhPhoto from "@/assets/carousel-photos/DSC08830.jpeg";
+import eightPhoto from "@/assets/carousel-photos/DSCF0133.jpeg";
+import ninthPhoto from "@/assets/carousel-photos/DSCF6718.jpeg";
+
+const carouselPhotos = [
+  firstPhoto,
+  secondPhoto,
+  thirdPhoto,
+  fourthPhoto,
+  fifthPhoto,
+  sixthPhoto,
+  seventhPhoto,
+  eightPhoto,
+  ninthPhoto,
+];
 
 function GallerySection() {
   return (
