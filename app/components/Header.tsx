@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import Link from "next/link";
 import React, { useState } from "react";
 
@@ -23,7 +24,13 @@ const Header = () => {
         {/* Logo */}
         <div className="flex items-center">
           <Link href="/" className="text-xl font-semibold">
-            <img src={"/top-logo.png"} className="w-24 lg:w-36 h-auto"></img>
+            <Image
+              src={"/top-logo.png"}
+              alt="Logo of Jakarta MUN"
+              width={144}
+              height={38}
+              className="w-24 lg:w-36 h-auto"
+            ></Image>
           </Link>
         </div>
         <div className="grow"></div>
@@ -33,7 +40,7 @@ const Header = () => {
           <Link href="/about" className="hover:scale-105 transition-all">
             About
           </Link>
-          <Link href="#" className="hover:scale-105 transition-all">
+          <Link href="/councils" className="hover:scale-105 transition-all">
             Councils
           </Link>
           {/* <a href="#" className="hover:scale-105 transition-all">
@@ -109,7 +116,7 @@ const Header = () => {
             About
           </Link>
           <Link
-            href="#"
+            href="/councils"
             className="text-white py-2 hover:text-gray-300 transition-all transform hover:translate-x-2"
           >
             Councils

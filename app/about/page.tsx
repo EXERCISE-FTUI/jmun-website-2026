@@ -2,7 +2,7 @@ import React from "react";
 
 function AboutPage() {
   return (
-    <main className="flex flex-col items-center justify-start w-full bg-gradient-to-b from-red-bright to-pink-dark min-h-screen pt-40 pb-10">
+    <main className="flex flex-col items-center justify-start w-full bg-gradient-to-b from-red-bright to-pink-dark min-h-screen pt-28 md:pt-40 pb-10">
       <div className="max-w-7xl px-8 flex flex-col w-full gap-6">
         <section className="flex flex-col items-center justify-start gap-4">
           <h1 className="text-transparent bg-clip-text bg-gradient-to-b from-soft-beige to-pink-light font-extrabold text-4xl md:text-7xl text-center font-plus-jakarta drop-shadow-2xl">
