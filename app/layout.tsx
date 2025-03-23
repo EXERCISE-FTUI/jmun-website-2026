@@ -16,8 +16,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "JMUN 2025",
-  description: "Jakarta Model United Nations 2025",
+  title: "Jakarta International Model United Nations 2025",
+  description: "Jakarta International Model United Nations 2025",
 };
 
 export default function RootLayout({
