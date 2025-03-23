@@ -3,6 +3,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import React, { useState } from "react";
+import RegistrationDropdown from "./RegistrationDropdown";
 
 const Header = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -67,12 +68,7 @@ const Header = () => {
           >
             Contact Us
           </button>
-          {/* <Link
-            href="#"
-            className="bg-white text-pink-dark px-4 py-2 rounded-lg font-medium hover:bg-pink-light hover:text-white transition-all"
-          >
-            Early Bird Registration
-          </Link> */}
+          <RegistrationDropdown />
         </div>
 
         {/* Mobile Burger Menu Button */}
@@ -153,12 +149,7 @@ const Header = () => {
           >
             Contact Us
           </button>
-          {/* <Link
-            href="#"
-            className="bg-white text-pink-dark hover:bg-pink-light hover:text-white py-2 px-4 rounded-lg text-center transition-all mt-2"
-          >
-            Early Bird Registration
-          </Link> */}
+          <RegistrationDropdown />
         </div>
       </div>
     </header>
