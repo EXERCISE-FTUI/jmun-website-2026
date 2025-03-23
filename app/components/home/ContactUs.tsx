@@ -1,5 +1,5 @@
 import React from "react";
-import { FaFacebook, FaLinkedin, FaTiktok } from "react-icons/fa";
+import { FaFacebook, FaInstagram, FaLinkedin, FaTiktok } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
 
 interface ContactUsProps {
@@ -99,6 +99,13 @@ const ContactUs: React.FC<ContactUsProps> = ({ className = "" }) => {
                 className="text-white hover:text-gray-200 transition-colors"
               >
                 <FaLinkedin className="text-4xl" />
+              </a>
+              <a
+                href="https://www.instagram.com/jakartamun/"
+                target="_blank"
+                className="text-white hover:text-gray-200 transition-colors"
+              >
+                <FaInstagram className="text-4xl" />
               </a>
             </div>
           </div>
