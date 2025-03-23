@@ -1,36 +1,29 @@
 "use client";
-import React, { useState, useRef, useEffect, MouseEventHandler } from "react";
+import { BREAKPOINTS } from "@/utils";
+import React, { useState, useRef, MouseEventHandler } from "react";
+import useBreakpoint from "use-breakpoint";
 
 const RegistrationDropdown = () => {
   const [isOpen, setIsOpen] = useState(false);
   const dropdownRef = useRef(null);
-  const isMobile = useRef(window.innerWidth < 768);
-
-  useEffect(() => {
-    const handleResize = () => {
-      isMobile.current = window.innerWidth < 768;
-    };
-
-    window.addEventListener("resize", handleResize);
-    return () => window.removeEventListener("resize", handleResize);
-  }, []);
+  const isMobile = useBreakpoint(BREAKPOINTS, "mobile");
 
   const handleMouseEnter = () => {
-    if (!isMobile.current) {
+    if (isMobile.breakpoint === "desktop") {
       setIsOpen(true);
     }
   };
 
   const handleMouseLeave = () => {
-    if (!isMobile.current) {
+    if (isMobile.breakpoint === "desktop") {
       setIsOpen(false);
     }
   };
 
   const handleClick: MouseEventHandler<HTMLButtonElement> = (e) => {
-    if (isMobile.current) {
+    if (isMobile.breakpoint !== "desktop") {
       e.preventDefault();
-      setIsOpen(!isOpen);
+      setIsOpen((prev) => !prev);
     }
   };
 
@@ -62,40 +55,45 @@ const RegistrationDropdown = () => {
         </svg>
       </button>
 
-      {isOpen && (
-        <div className="absolute z-10 mt-1 w-full bg-white border border-gray-200 rounded-lg shadow-lg">
-          <div className="py-1">
-            <a
-              href="http://bit.ly/OnlineAttendeeFormJMUN2025"
-              target="_blank"
-              className="block px-4 py-2 text-sm text-gray-700 hover:bg-pink-light hover:text-white"
-            >
-              Online Attendee
-            </a>
-            <a
-              href="http://bit.ly/OnlineDelegationFormJMUN2025"
-              target="_blank"
-              className="block px-4 py-2 text-sm text-gray-700 hover:bg-pink-light hover:text-white"
-            >
-              Online Delegation
-            </a>
-            <a
-              href="http://bit.ly/OfflineAttendeeFormJMUN2025"
-              target="_blank"
-              className="block px-4 py-2 text-sm text-gray-700 hover:bg-pink-light hover:text-white"
-            >
-              Offline Attendee
-            </a>
-            <a
-              href="http://bit.ly/OfflineDelegationFormJMUN2025"
-              target="_blank"
-              className="block px-4 py-2 text-sm text-gray-700 hover:bg-pink-light hover:text-white"
-            >
-              Offline Delegation
-            </a>
-          </div>
+      <div
+        className={`absolute z-10 mt-1 w-full bg-white border border-gray-200 rounded-lg shadow-lg transition-all duration-300 ease-in-out overflow-hidden ${
+          isOpen
+            ? "max-h-64 opacity-100 transform translate-y-0"
+            : "max-h-0 opacity-0 pointer-events-none transform -translate-y-2"
+        }`}
+      >
+        {" "}
+        <div className="py-1">
+          <a
+            href="http://bit.ly/OnlineAttendeeFormJMUN2025"
+            target="_blank"
+            className="block px-4 py-2 text-sm text-gray-700 hover:bg-pink-light hover:text-white"
+          >
+            Online Attendee
+          </a>
+          <a
+            href="http://bit.ly/OnlineDelegationFormJMUN2025"
+            target="_blank"
+            className="block px-4 py-2 text-sm text-gray-700 hover:bg-pink-light hover:text-white"
+          >
+            Online Delegation
+          </a>
+          <a
+            href="http://bit.ly/OfflineAttendeeFormJMUN2025"
+            target="_blank"
+            className="block px-4 py-2 text-sm text-gray-700 hover:bg-pink-light hover:text-white"
+          >
+            Offline Attendee
+          </a>
+          <a
+            href="http://bit.ly/OfflineDelegationFormJMUN2025"
+            target="_blank"
+            className="block px-4 py-2 text-sm text-gray-700 hover:bg-pink-light hover:text-white"
+          >
+            Offline Delegation
+          </a>
         </div>
-      )}
+      </div>
     </div>
   );
 };

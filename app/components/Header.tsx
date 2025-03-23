@@ -2,11 +2,20 @@
 
 import Image from "next/image";
 import Link from "next/link";
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import RegistrationDropdown from "./RegistrationDropdown";
+import useBreakpoint from "use-breakpoint";
+import { BREAKPOINTS } from "@/utils";
 
 const Header = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const breakpoint = useBreakpoint(BREAKPOINTS, "desktop");
+
+  useEffect(() => {
+    if (breakpoint.breakpoint === "desktop") {
+      setIsMobileMenuOpen(false);
+    }
+  }, [breakpoint.breakpoint]);
 
   function handleContactUsClick() {
     const contactUsHeader = document.querySelector("#contact-us-header");
@@ -112,7 +121,7 @@ const Header = () => {
 
       {/* Mobile Menu Dropdown - Animated */}
       <div
-        className={`bg-transparent overflow-hidden transition-all duration-300 ease-in-out font-plus-jakarta flex flex-col items-center justify-start w-full ${
+        className={`bg-transparent transition-all duration-300 ease-in-out font-plus-jakarta flex flex-col items-center justify-start w-full ${
           isMobileMenuOpen ? "max-h-96 opacity-100 pt-4" : "max-h-0 opacity-0"
         }`}
       >
