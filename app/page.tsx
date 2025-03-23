@@ -4,7 +4,7 @@ import CouncilSection from "./components/home/CouncilSection";
 import WelcomingRemarks from "./components/home/WelcomingRemarks";
 import ContactUs from "./components/home/ContactUs";
 import GallerySection from "./components/home/GallerySection";
-import bundaranHIPhoto from "@/assets/bundaranHI.webp";
+import bundaranHIPhoto from "@/assets/bundaran-HI-mini.webp";
 
 function HomePage() {
   return (

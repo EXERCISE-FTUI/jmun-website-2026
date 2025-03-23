@@ -1,5 +1,6 @@
 import React from "react";
 import secgenPhoto from "@/assets/secgen.jpg";
+import Image from "next/image";
 
 function WelcomingRemarks() {
   return (
@@ -10,10 +11,12 @@ function WelcomingRemarks() {
       <div className="flex flex-col lg:flex-row items-center lg:items-start justify-center gap-8">
         <div className="relative rounded-full overflow-hidden h-64 w-64 shadow-inner drop-shadow-2xl">
           {/* Sample image - replace with your own image or use as a component that accepts an image prop */}
-          <img
+          <Image
             src={secgenPhoto.src}
             alt="Photo of Hana Geraldine, Secretary General of Jakarta International MUN 2025"
             className="h-full w-full object-cover"
+            width={256}
+            height={256}
           />
         </div>
         <p className="flex flex-col gap-4 lg:max-w-1/2 font-plus-jakarta md:text-xl text-justify font-medium">

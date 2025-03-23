@@ -23,11 +23,7 @@ const Header = () => {
       <div className="container flex items-center justify-between">
         {/* Logo */}
         <div className="flex items-center">
-          <Link
-            href="/"
-            onClick={toggleMobileMenu}
-            className="text-xl font-semibold"
-          >
+          <Link href="/" className="text-xl font-semibold">
             <Image
               src={"/top-logo.png"}
               alt="Logo of Jakarta MUN"
@@ -122,7 +118,6 @@ const Header = () => {
       >
         <div className="w-full flex flex-col gap-4 bg-transparent">
           <Link
-            onClick={toggleMobileMenu}
             href="/about"
             className="text-white py-2 hover:text-gray-300 transition-all transform hover:translate-x-2"
           >

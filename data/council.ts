@@ -1,15 +1,15 @@
 import { Council } from "@/types";
-import fomLogo from "../public/council-logos/FOM.png";
-import auLogo from "../public/council-logos/African Union.png";
-import alLogo from "../public/council-logos/Arab League.png";
-import disecLogo from "../public/council-logos/Disec.png";
-import hccLogo from "../public/council-logos/HCC.png";
-import pressLogo from "../public/council-logos/Press Corps.png";
-import sochumLogo from "../public/council-logos/Sochum.png";
-import unwomenLogo from "../public/council-logos/UN Women.png";
-import undpLogo from "../public/council-logos/UNDP.png";
-import unodcLogo from "../public/council-logos/UNODC.png";
-import unscLogo from "../public/council-logos/UNSC.png";
+import fomLogo from "../public/council-logos-optimized/FOM.png";
+import auLogo from "../public/council-logos-optimized/African Union.png";
+import alLogo from "../public/council-logos-optimized/Arab League.png";
+import disecLogo from "../public/council-logos-optimized/Disec.png";
+import hccLogo from "../public/council-logos-optimized/HCC.png";
+import pressLogo from "../public/council-logos-optimized/Press Corps.png";
+import sochumLogo from "../public/council-logos-optimized/Sochum.png";
+import unwomenLogo from "../public/council-logos-optimized/UN Women.png";
+import undpLogo from "../public/council-logos-optimized/UNDP.png";
+import unodcLogo from "../public/council-logos-optimized/UNODC.png";
+import unscLogo from "../public/council-logos-optimized/UNSC.png";
 
 export const councils: Council[] = [
   {

@@ -18,7 +18,7 @@ function CouncilsPage() {
           quality={85}
         />
       </div>
-      <div className="flex flex-col w-full px-8 lg:px-20 pt-32 md:pt-40 pb-20 gap-4 bg-black/50 opacity-0 animate-fade-in">
+      <div className="flex flex-col w-full px-8 lg:px-20 pt-32 md:pt-40 pb-20 gap-4 bg-black/50 opacity-0 animate-fade-in no-scrollbar">
         <div id={changeDelimiter(councils[0].organization.toLowerCase())}></div>
         <h1 className="text-white font-extrabold text-4xl md:text-7xl text-center font-plus-jakarta pb-6 mb-16 border-b-2 border-b-white">
           Councils
