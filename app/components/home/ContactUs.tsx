@@ -9,7 +9,7 @@ interface ContactUsProps {
 const ContactUs: React.FC<ContactUsProps> = ({ className = "" }) => {
   return (
     <footer
-      className={`w-full ${className} bg-red-bright flex flex-col items-center justify-start px-8 lg:px-0`}
+      className={`w-full ${className} bg-pink-dark flex flex-col items-center justify-start px-8 lg:px-0`}
     >
       {/* City skyline banner with contact us text */}
       <div className="relative w-full overflow-hidden py-10">

@@ -4,6 +4,7 @@ import CouncilSection from "./components/home/CouncilSection";
 import WelcomingRemarks from "./components/home/WelcomingRemarks";
 import ContactUs from "./components/home/ContactUs";
 import GallerySection from "./components/home/GallerySection";
+import Sponsors from "./components/home/Sponsors";
 import bundaranHIPhoto from "@/assets/bundaran-HI-mini.webp";
 
 function HomePage() {
@@ -27,6 +28,7 @@ function HomePage() {
       <WelcomingRemarks />
       <CouncilSection />
       <GallerySection />
+      <Sponsors />
       <ContactUs />
     </main>
   );
