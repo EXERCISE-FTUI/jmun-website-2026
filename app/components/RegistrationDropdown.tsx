@@ -92,6 +92,13 @@ const RegistrationDropdown = () => {
           >
             Offline Delegation
           </a>
+          <a
+            href="http://bit.ly/JMUN2025Scholarship"
+            target="_blank"
+            className="block px-4 py-2 text-sm text-gray-700 hover:bg-pink-light hover:text-white"
+          >
+            Scholarships
+          </a>
         </div>
       </div>
     </div>
