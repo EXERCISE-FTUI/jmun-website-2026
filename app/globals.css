@@ -68,6 +68,76 @@
   font-style: normal;
 }
 
+/* Cormorant Garamond Font Family */
+@font-face {
+  font-family: 'CormorantGaramond';
+  src: url('/fonts/CG/CormorantGaramond-Light.ttf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'CormorantGaramond';
+  src: url('/fonts/CG/CormorantGaramond-LightItalic.ttf') format('truetype');
+  font-weight: 300;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'CormorantGaramond';
+  src: url('/fonts/CG/CormorantGaramond-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'CormorantGaramond';
+  src: url('/fonts/CG/CormorantGaramond-Italic.ttf') format('truetype');
+  font-weight: 400;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'CormorantGaramond';
+  src: url('/fonts/CG/CormorantGaramond-Medium.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'CormorantGaramond';
+  src: url('/fonts/CG/CormorantGaramond-MediumItalic.ttf') format('truetype');
+  font-weight: 500;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'CormorantGaramond';
+  src: url('/fonts/CG/CormorantGaramond-SemiBold.ttf') format('truetype');
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'CormorantGaramond';
+  src: url('/fonts/CG/CormorantGaramond-SemiBoldItalic.ttf') format('truetype');
+  font-weight: 600;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'CormorantGaramond';
+  src: url('/fonts/CG/CormorantGaramond-Bold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'CormorantGaramond';
+  src: url('/fonts/CG/CormorantGaramond-BoldItalic.ttf') format('truetype');
+  font-weight: 700;
+  font-style: italic;
+}
 
 @theme inline {
   --color-background: var(--background);
@@ -78,6 +148,7 @@
   --font-bodoni: 'BodoniIf', serif;
   --font-georgia: 'Georgia', serif;
   --font-plus-jakarta: 'PlusJakartaSans', sans-serif;
+  --font-cormorant-garamond: 'CormorantGaramond', serif;
 
   /* Primary Colors */
   --color-red-dark: rgb(142, 13, 22);   /* #8E0D16 */
@@ -86,6 +157,8 @@
   --color-pink-light: rgb(244, 155, 186); /* #F49BBA */
   --color-deep-blue: #2C3E80; /* The dark blue shade */
   --color-soft-beige: #E6E2C3; /* The light beige color */
+  --color-red-medium: #cf2c2c; /* #FC351C */
+  --color-pink-medium: #ff89e0; /* #F49BBA */
 
   /* Typography */
   --font-sans: 'Inter', sans-serif;

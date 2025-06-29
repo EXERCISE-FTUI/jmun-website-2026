@@ -4,13 +4,11 @@ import Image from "next/image";
 
 interface CouncilCardProps {
   council: Council;
-  imagePosition?: "left" | "right";
   nextOrganization?: string;
 }
 
 const CouncilCard: React.FC<CouncilCardProps> = ({
   council,
-  imagePosition = "right",
   nextOrganization,
 }) => {
   const {
@@ -19,7 +17,6 @@ const CouncilCard: React.FC<CouncilCardProps> = ({
     organization,
     participant,
     level = "beginner",
-    location,
     description,
   } = council;
 
@@ -27,54 +24,42 @@ const CouncilCard: React.FC<CouncilCardProps> = ({
     return participant === "single" ? "Single Delegate" : "Double Delegate";
   };
 
-  const renderContent = () => (
-    <div className="flex flex-col justify-center py-6 lg:p-6 flex-1 gap-4">
-      <div className="flex flex-col gap-2 lg:gap-0">
-        <h2 className="text-4xl lg:text-6xl font-extrabold font-bodoni text-white">
-          {organization}
-        </h2>
-        <p className="font-bodoni font-bold text-2xl lg:text-3xl">{topic}</p>
+  return (
+    <div className="w-full rounded-lg overflow-hidden">
+      {/* Top row: image and title section */}
+      <div className="flex flex-col md:flex-row items-center md:items-start gap-6 p-6 pb-0">
+        <div className="flex-1 flex flex-col justify-center gap-2">
+          <h2 className="text-4xl lg:text-6xl font-extrabold font-bodoni text-white">
+            {organization}
+          </h2>
+          <p className="text-white font-bold text-3xl font-bodoni">
+            Council Type: {capitalizeFirstLetter(level)} -{" "}
+            {formatParticipant(participant)}
+          </p>
+          <p className="font-bodoni font-bold text-2xl lg:text-4xl">
+            &quot;{topic}&quot;
+          </p>
+        </div>
+        <div className="w-full md:w-1/3 flex items-center justify-center">
+          <div className="relative w-48 h-48">
+            <Image
+              src={logo}
+              alt={`${organization} logo`}
+              layout="fill"
+              objectFit="contain"
+              className="max-w-full"
+            />
+          </div>
+        </div>
       </div>
-
-      <p className="text-white font-bold text-lg font-plus-jakarta">
-        {capitalizeFirstLetter(level)} - {formatParticipant(participant)} -{" "}
-        {location === "offline" ? "Offline" : "Online"}
-      </p>
-      <div className="flex flex-col-reverse lg:flex-col">
+      {/* Description below, full width */}
+      <div className="w-full px-6 pb-6 pt-4">
         {!!nextOrganization && (
           <div id={changeDelimiter(nextOrganization.toLowerCase())}></div>
         )}
-
-        <p className="text-white leading-relaxed font-plus-jakarta text-justify">
+        <p className="text-white leading-relaxed font-plus-jakarta lg:text-lg text-justify">
           {description}
         </p>
-      </div>
-    </div>
-  );
-
-  const renderImage = () => (
-    <div className="w-full md:w-1/3 flex items-center justify-center p-6">
-      <div className="relative w-48 h-48">
-        <Image
-          src={logo}
-          alt={`${organization} logo`}
-          layout="fill"
-          objectFit="contain"
-          className="max-w-full"
-        />
-      </div>
-    </div>
-  );
-
-  return (
-    <div className="w-full rounded-lg overflow-hidden">
-      <div
-        className={`flex flex-col ${
-          imagePosition === "left" ? "md:flex-row" : "md:flex-row-reverse"
-        }`}
-      >
-        {renderImage()}
-        {renderContent()}
       </div>
     </div>
   );

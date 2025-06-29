@@ -53,35 +53,6 @@ function AboutPage() {
           </h3>
           <p></p>
         </section>
-        <section className="flex flex-col items-center justify-start gap-4">
-          <h2 className="text-transparent bg-clip-text bg-gradient-to-b from-soft-beige to-pink-light font-extrabold text-4xl md:text-7xl text-center font-plus-jakarta drop-shadow-2xl">
-            ABOUT ISAFIS
-          </h2>
-          <p className="text-white font-plus-jakarta text-justify font-medium md:text-lg">
-            Indonesian Student Association for International Studies (
-            <strong>”ISAFIS”</strong>) is a youth-led and non-profit
-            organization formed as a medium for youth to exchange ideas,
-            embracing upon international issues. ISAFIS has also built
-            collaboration and partnership with numerous stakeholders, ranging
-            from fellow youth organizations, non-governmental organizations,
-            embassies, government institutions, and international organizations
-            to support its programs such as Jakarta Model United Nations,
-            Indonesia International Week, Jakarta Youth Summit and other annual
-            programs. As a youth organization, ISAFIS attempts to give many
-            advantages for the youth themselves, as well as for the entire
-            community through our programs. Particularly, we try to develop
-            important personal and interpersonal skills of the members, offer
-            opportunities for them through conferences, summits, exchange
-            programs, and involving youth to develop their leadership potential,
-            so that as they grow and learn they can become thoughtful, prepared
-            leaders of the society. Hence, in line with the ISAFIS vision
-            mission statement, we would like to develop the members and advance
-            ISAFIS as a leading youth organization by facilitating personal
-            growth and development for members through a series of integrated
-            programs and activities, and building and widening external
-            partnerships with the domestic and international institutions.
-          </p>
-        </section>
         <div className="border-b-2 border-white w-full"></div>
       </div>
       <ContactUs />

@@ -9,18 +9,18 @@ interface RegistrationButtonProps {
 
 function RegistrationButton({ text, href }: RegistrationButtonProps) {
   const baseClasses =
-    "w-full px-6 py-4 rounded-lg font-semibold text-lg transition-all duration-300 hover:shadow-xl transform hover:scale-105 text-center block font-plus-jakarta";
+    "w-full px-6 py-4 rounded-2xl font-semibold text-lg transition-all duration-300 hover:shadow-xl transform hover:scale-105 text-center block font-plus-jakarta";
 
-  // Using uniform red/orange colors from the brand palette
-  const uniformClasses =
-    "bg-red-bright text-white hover:bg-red-dark shadow-lg hover:shadow-2xl";
+  // Use a gradient background like in hover:from-pink-medium hover:to-red-mediumthe image and Header
+  const gradientClasses =
+    "bg-gradient-to-b from-red-medium to-pink-medium text-white shadow-lg hover:shadow-2xl";
 
   return (
     <a
       href={href}
       target="_blank"
       rel="noopener noreferrer"
-      className={`${baseClasses} ${uniformClasses}`}
+      className={`${baseClasses} ${gradientClasses}`}
     >
       {text}
     </a>
@@ -39,13 +39,16 @@ function RegistrationPage() {
         />
 
         {/* Overlay */}
-        <div className="absolute inset-0 bg-black opacity-60" />
+        <div className="absolute inset-0 bg-black opacity-50" />
 
         {/* Content */}
-        <div className="relative z-10 w-full h-full flex flex-col items-center justify-center font-plus-jakarta px-4 md:px-8">
-          <h1 className="text-white text-4xl md:text-7xl font-extrabold font-plus-jakarta animate-fade-in opacity-0 drop-shadow-2xl text-center">
+        <div className="relative z-10 w-full h-full flex flex-col items-start justify-end font-plus-jakarta px-4 md:px-8 pb-16">
+          <h1 className="text-yellow-400 text-5xl md:text-7xl font-extrabold font-plus-jakarta drop-shadow-2xl text-right">
             Registration
           </h1>
+          <p className="text-white text-lg md:text-2xl font-plus-jakarta mt-2 text-right">
+            Be part of the change!
+          </p>
         </div>
       </div>
 
@@ -54,7 +57,10 @@ function RegistrationPage() {
         <div className="w-full max-w-6xl grid grid-cols-1 lg:grid-cols-1 gap-8 lg:gap-16">
           {/* Main Event Section */}
           <div className="bg-white bg-opacity-90 rounded-2xl p-8 shadow-2xl">
-            <h2 className="text-transparent bg-clip-text bg-gradient-to-b from-red-dark to-pink-dark text-2xl md:text-3xl font-bold text-center mb-8 font-plus-jakarta">
+            <h2
+              className="text-yellow-400 text-2xl md:text-3xl font-bold text-center mb-8 font-plus-jakarta"
+              style={{ textShadow: "0 0 40px #ffcf53, 0 0 80px #ffcf53" }}
+            >
               Main Event
             </h2>
 

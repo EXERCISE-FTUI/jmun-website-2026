@@ -4,7 +4,7 @@ import Image from "next/image";
 
 function WelcomingRemarks() {
   return (
-    <section className="w-full bg-gradient-to-b from-pink-dark to-red-bright flex flex-col items-center justify-center py-10 px-12 lg:px-0 gap-8 min-h-[80vh]">
+    <section className="w-full bg-gradient-to-b from-red-bright to-pink-dark flex flex-col items-center justify-center py-10 px-12 lg:px-0 gap-8 min-h-[80vh]">
       <h2 className="font-plus-jakarta font-extrabold text-3xl md:text-5xl text-white drop-shadow-2xl text-center">
         Secretary General Remarks
       </h2>

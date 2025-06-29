@@ -26,7 +26,7 @@ function HeaderPhoto({
       {/* Optional Overlay */}
       {overlayOpacity > 0 && (
         <div
-          className="absolute inset-0 bg-black w-full h-full"
+          className="absolute inset-0 bg-pink-light w-full h-full"
           style={{ opacity: overlayOpacity }}
         />
       )}
