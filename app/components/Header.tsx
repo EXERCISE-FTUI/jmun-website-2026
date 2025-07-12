@@ -146,8 +146,7 @@ const Header = () => {
                   "Offline Delegation",
                   "Online Attendee",
                   "Offline Attendee",
-                  // "Pre-event",
-                  // "Social Packs",
+                  "Social Packs",
                 ].map((item, idx) => (
                   <Link
                     key={idx}
@@ -309,8 +308,7 @@ const Header = () => {
                   "Offline Delegation",
                   "Online Attendee",
                   "Offline Attendee",
-                  // "Pre-event",
-                  // "Social Packs",
+                  "Social Packs",
                 ].map((item, idx) => (
                   <Link
                     key={idx}
