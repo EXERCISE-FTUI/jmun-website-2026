@@ -2,12 +2,36 @@ import React from "react";
 import Image, { StaticImageData } from "next/image";
 
 import globy from "@/assets/sponsors-and-medpars/globy.png";
+import ptsmi from "@/assets/sponsors-and-medpars/ptsmi.png";
+import pegadaian from "@/assets/sponsors-and-medpars/pegadaian.png";
+import lorena from "@/assets/sponsors-and-medpars/lorena.png";
+import bankJakarta from "@/assets/sponsors-and-medpars/bank-jakarta.png";
 
 // Mock sponsor data - in a real application, this would likely come from a data file or API
 const sponsors = [
   {
     name: "Globy",
-    logo: globy, // You'll need to add actual sponsor logo images
+    logo: globy,
+    tier: "Platinum",
+  },
+  {
+    name: "PT SMI",
+    logo: ptsmi,
+    tier: "Platinum",
+  },
+  {
+    name: "Pegadaian",
+    logo: pegadaian,
+    tier: "Platinum",
+  },
+  {
+    name: "Lorena",
+    logo: lorena,
+    tier: "Platinum",
+  },
+  {
+    name: "Bank Jakarta",
+    logo: bankJakarta,
     tier: "Platinum",
   },
 ] as SponsorLogoProps[];
@@ -21,7 +45,7 @@ interface SponsorLogoProps {
 function SponsorLogo({ name, logo, tier }: SponsorLogoProps) {
   // Set dimensions based on tier
   const dimensions = {
-    Platinum: { container: "h-48", image: "h-40 w-40" },
+    Platinum: { container: "h-48 w-48", image: "h-40 w-full" },
     Gold: { container: "h-40", image: "h-32 w-32" },
     Silver: { container: "h-36", image: "h-28 w-28" },
     Bronze: { container: "h-32", image: "h-24 w-24" },
@@ -32,7 +56,7 @@ function SponsorLogo({ name, logo, tier }: SponsorLogoProps) {
 
   return (
     <div
-      className={`p-4 rounded-lg flex items-center justify-center ${container}`}
+      className={`p-4 rounded-lg flex items-center justify-center ${container} justify-self-center self-center w-full`}
     >
       <div className={`relative ${image}`}>
         {/* Use a fallback div with the name if no logo is provided */}
@@ -81,7 +105,7 @@ function Sponsors() {
         {/* <h3 className="text-white text-xl md:text-2xl font-bold mb-4 text-center">
           Gold Partners
         </h3> */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8 justify-items-center">
           {sponsors
             .filter((s) => s.tier === "Gold")
             .map((sponsor, index) => (
