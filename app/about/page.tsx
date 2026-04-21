@@ -7,7 +7,7 @@ function AboutPage() {
       <div className="max-w-7xl px-8 flex flex-col w-full gap-6">
         <section className="flex flex-col items-center justify-start gap-4">
           <h1 className="text-transparent bg-clip-text bg-gradient-to-b from-soft-beige to-pink-light font-extrabold text-4xl md:text-7xl text-center font-plus-jakarta drop-shadow-2xl">
-            ABOUT JMUN
+            ABOUT JMUN Test
           </h1>
           <p className="text-white font-plus-jakarta text-justify font-medium md:text-lg">
             Jakarta Model United Nations (<strong>“JMUN”</strong>) is
