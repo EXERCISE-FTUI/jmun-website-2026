@@ -11,5 +11,6 @@ export type Council = {
   participant: CouncilParticipant;
   level?: CouncilLevel;
   location: CouncilLocation;
+  expansion?: string;
   description: string;
 };

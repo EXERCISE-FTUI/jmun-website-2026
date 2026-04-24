@@ -220,3 +220,16 @@ body {
   -ms-overflow-style: none;  /* IE and Edge */
   scrollbar-width: none;  /* Firefox */
 }
+
+.no-scrollbar-bg::-webkit-scrollbar {
+  width: 6px;
+}
+
+.no-scrollbar-bg::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.no-scrollbar-bg::-webkit-scrollbar-thumb {
+  background-color: #02537160; 
+  border-radius: 9999px;
+}
