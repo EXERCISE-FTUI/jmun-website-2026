@@ -103,12 +103,12 @@ function SponsorLogo({ name, logo, tier }: SponsorLogoProps) {
 
 function Sponsors() {
   return (
-    <section className="w-full bg-gradient-to-b from-red-bright to-pink-dark flex flex-col items-center justify-start py-12 px-10">
-      <h2 className="font-plus-jakarta font-extrabold text-3xl md:text-5xl text-white drop-shadow-2xl text-center mb-8">
+    <section className="w-full flex flex-col items-center justify-start pt-28 md:pt-33 px-10">
+      <h2 className="font-bodoni font-bold text-5xl md:text-7xl text-biru-3">
         Our Sponsors
       </h2>
 
-      <div className="container py-4 w-full flex flex-col items-center justify-center">
+      <div className="container w-full flex flex-col items-center justify-center">
         {/* <h3 className="text-white text-xl md:text-2xl font-bold mb-4 text-center">
           Platinum Partners
         </h3> */}
@@ -160,7 +160,7 @@ function Sponsors() {
               />
             ))}
         </div>
-        <div className="flex flex-wrap justify-center gap-6 mb-8 w-full">
+        <div className="flex flex-wrap justify-center gap-6 w-full">
           {sponsors
             .filter((s) => s.tier === "Platinum")
             .map((sponsor, index) => (
