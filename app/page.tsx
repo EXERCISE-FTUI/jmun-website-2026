@@ -6,9 +6,10 @@ import WelcomingRemarks from "./components/home/WelcomingRemarks";
 import ContactUs from "./components/home/ContactUs";
 import GallerySection from "./components/home/GallerySection";
 import Sponsors from "./components/home/Sponsors";
-import MainBackground from "@/assets/MainBackground.svg";
+import HomeBackground from "@/assets/HomeBackground.png";
 import heroTitle from "@/assets/HeroTitle.svg";
 import patungDirgantara from "@/assets/PatungDirgantara.svg";
+import EllipseKuning from "@/assets/EllipseKuning.png";
 
 const montserrat = Montserrat({
   subsets: ["latin"],
@@ -22,7 +23,7 @@ function HomePage() {
       {/* Fixed background — locked to viewport, content scrolls over it */}
       <div className="fixed inset-0 -z-10" aria-hidden="true">
         <Image
-          src={MainBackground}
+          src={HomeBackground}
           alt=""
           fill
           priority
@@ -39,7 +40,18 @@ function HomePage() {
 
           <div className="w-full max-w-[1250px] flex flex-col items-center">
 
-            <div className="w-full rounded-[1.75rem] md:rounded-[2.25rem] bg-white/50 px-7 md:px-12 lg:px-12 py-12">
+            <div className="absolute opacity-50 left-[-13vw] top-[-13vw] -z-10">
+              <Image
+                src="/bunga-kiri-atas.png"
+                alt="logo"
+                width={1783}
+                height={2072}
+                className="w-[58vw] aspect-[1783/2072]"
+                priority
+                unoptimized
+              />
+            </div>
+            <div className="w-full rounded-[1.75rem] md:rounded-[2.25rem] bg-white/50 px-7 md:px-12 lg:px-12 py-12 [clip-path:inset(-100vw_-100vw_0_-100vw)]">
               <div className="grid grid-cols-1 md:grid-cols-2 items-center gap-9 md:gap-5">
 
                 <div className="flex flex-col items-start justify-center">
@@ -65,13 +77,20 @@ function HomePage() {
                   </div>
                 </div>
 
-                <div className="w-full flex items-center justify-center md:justify-end ml-20 -mb-20">
-                  <Image
-                    src={patungDirgantara}
-                    alt="Patung Dirgantara illustration"
-                    priority
-                    className="max-w-none sm:w-[150px] md:w-[300px] lg:w-[575px] h-auto object-contain"
-                  />
+                <div className="w-full flex items-center justify-center md:justify-end ml-20 -mb-40">
+                  <div className="relative">
+                    <Image
+                      src={EllipseKuning}
+                      alt=""
+                      className="absolute top-[15%] left-[45%] -translate-x-1/2 -translate-y-1/2 w-[50%] h-auto -z-10 opacity-100"
+                    />
+                    <Image
+                      src={patungDirgantara}
+                      alt="Patung Dirgantara illustration"
+                      priority
+                      className="max-w-none sm:w-[70px] md:w-[150px] lg:w-[520px] h-auto object-contain scale-x-[-1]"
+                    />
+                  </div>
                 </div>
               </div>
             </div>
