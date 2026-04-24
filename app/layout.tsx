@@ -26,10 +26,32 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="en" suppressHydrationWarning>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+              (function() {
+                var DESKTOP_WIDTH = 1280;
+                var MOBILE_THRESHOLD = 768;
+                var hasTouch = "ontouchstart" in window || navigator.maxTouchPoints > 0;
+                var deviceWidth = hasTouch ? Math.min(window.screen.width, window.screen.height) : window.innerWidth;
+                if (deviceWidth < MOBILE_THRESHOLD) {
+                  var viewportMeta = document.querySelector('meta[name="viewport"]');
+                  if (!viewportMeta) {
+                    viewportMeta = document.createElement("meta");
+                    viewportMeta.setAttribute("name", "viewport");
+                    document.head.appendChild(viewportMeta);
+                  }
+                  viewportMeta.setAttribute("content", "width=" + DESKTOP_WIDTH + ", initial-scale=" + (deviceWidth / DESKTOP_WIDTH) + ", maximum-scale=5, user-scalable=yes");
+                  document.documentElement.setAttribute("data-is-mobile", "true");
+                }
+              })()
+            `,
+          }}
+        />
         <Header />
         {children}
       </body>

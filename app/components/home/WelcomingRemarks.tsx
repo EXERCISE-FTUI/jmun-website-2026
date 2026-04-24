@@ -4,13 +4,13 @@ import secgen2026 from "@/assets/secgen-2026.png";
 
 function WelcomingRemarks() {
   return (
-    <section className="w-full flex flex-col items-center justify-center px-12 lg:px-0 gap-8">
-      <main className="relative flex flex-col items-center justify-start w-full min-h-screen pt-28 md:pt-33">
+    <section className="w-full flex flex-col items-center justify-start gap-8">
+      <main className="relative flex flex-col items-center justify-start w-full pt-5 md:pt-10">
 
         <div className="absolute inset-0 z-0 pointer-events-none" />
 
-        <div className="relative w-full h-auto md:px-15 max-sm:mt-[-25px] z-10">
-          <div className="relative w-full h-auto bg-white/50 rounded-4xl flex flex-col pt-3 px-12 pb-5 max-md:px-6 scale-90">
+        <div className="relative w-full h-auto max-sm:mt-[-25px] z-10">
+          <div className="relative w-full h-auto bg-white/50 rounded-4xl flex flex-col pt-3 px-13 pb-5 max-md:px-6 scale-90">
             <Image
               src="/bunga-kanan-atas.png"
               alt="logo"
@@ -21,9 +21,9 @@ function WelcomingRemarks() {
               unoptimized
             />
 
-            <div className="flex flex-col lg:flex-row items-center lg:items-center gap-10 mt-6 lg:mt-2">
+            <div className="flex flex-col lg:flex-row items-center lg:items-center gap-6 mt-6 lg:mt-2">
               <div className="flex-1 order-2 lg:order-1">
-                <h1 className="text-[75px] max-md:text-[40px] md:mb-[-10px] font-bold text-biru-3 font-bodoni">
+                <h1 className="text-[55px] max-md:text-[40px] md:mb-[-10px] font-bold text-biru-3 font-bodoni">
                   Secretary General Remarks
                 </h1>
                 <p className="text-[20px] max-md:text-[14px] text-justify font-light text-biru-3 font-montserrat leading-tight pr-5">
@@ -40,7 +40,7 @@ function WelcomingRemarks() {
                   Flicka Miracle Simarmata
                 </p>
               </div>
-              <div className="w-[80%] lg:w-[320px] xl:w-[330px] shrink-0 order-1 lg:order-2">
+              <div className="w-[80%] lg:w-[280px] xl:w-[300px] shrink-0 order-1 lg:order-2">
                 <Image
                   src={secgen2026}
                   alt="Secretary General"

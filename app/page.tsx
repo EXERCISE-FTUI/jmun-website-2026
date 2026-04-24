@@ -10,6 +10,7 @@ import HomeBackground from "@/assets/HomeBackground.png";
 import heroTitle from "@/assets/HeroTitle.svg";
 import patungDirgantara from "@/assets/PatungDirgantara.svg";
 import EllipseKuning from "@/assets/EllipseKuning.png";
+import MobileViewportOverride from "./components/MobileScaler";
 
 const montserrat = Montserrat({
   subsets: ["latin"],
@@ -20,6 +21,9 @@ const montserrat = Montserrat({
 function HomePage() {
   return (
     <main className="w-full min-h-screen flex flex-col items-center justify-start">
+      {/* Override viewport on mobile to force desktop layout */}
+      <MobileViewportOverride />
+
       {/* Fixed background — locked to viewport, content scrolls over it */}
       <div className="fixed inset-0 -z-10" aria-hidden="true">
         <Image
@@ -33,12 +37,12 @@ function HomePage() {
       </div>
 
       <section
-        className={`relative w-full min-h-screen ${montserrat.className}`}
+        className={`relative w-full min-h-[700px] ${montserrat.className}`}
       >
 
-        <div className="relative z-10 w-full min-h-screen px-4 sm:px-6 md:px-12 pt-35 flex flex-col items-center justify-center">
+        <div className="relative z-10 w-full min-h-[725px] px-4 sm:px-6 md:px-12 sm:pt-1 md:pt-28 flex flex-col items-center justify-center">
 
-          <div className="w-full max-w-[1250px] flex flex-col items-center">
+          <div className="w-[1100px] lg:w-full max-w-[1250px] flex flex-col items-center">
 
             <div className="absolute opacity-50 left-[-13vw] top-[-13vw] -z-10">
               <Image
@@ -51,7 +55,7 @@ function HomePage() {
                 unoptimized
               />
             </div>
-            <div className="w-full rounded-[1.75rem] md:rounded-[2.25rem] bg-white/50 px-7 md:px-12 lg:px-12 py-12 [clip-path:inset(-100vw_-100vw_0_-100vw)]">
+            <div className="w-full rounded-[1.75rem] md:rounded-[2.25rem] bg-white/50 px-5 py-12 [clip-path:inset(-100vw_-100vw_0_-100vw)] scale-100 [[data-is-mobile=true]_&]:scale-95">
               <div className="grid grid-cols-1 md:grid-cols-2 items-center gap-9 md:gap-5">
 
                 <div className="flex flex-col items-start justify-center">

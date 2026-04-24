@@ -24,7 +24,7 @@ const carouselPhotos = [
 
 function GallerySection() {
   return (
-    <section className="w-full flex flex-col items-start justify-start px-20 pt-28 md:pt-33 gap-6 scale-93">
+    <section className="w-full flex flex-col items-start justify-start px-20 pt-16 md:pt-20 gap-6 scale-93">
       <div className="w-full flex flex-col md:flex-row md:items-center md:justify-between gap-2 md:gap-8 px-8">
         <h2 className="font-bodoni font-bold text-5xl md:text-7xl text-biru-3">
           Past JMUN

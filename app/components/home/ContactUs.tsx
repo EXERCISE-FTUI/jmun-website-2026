@@ -12,7 +12,7 @@ const ContactUs: React.FC<ContactUsProps> = ({ className = "" }) => {
       className={`w-full ${className} flex flex-col items-center justify-start px-8 lg:px-0 pb-10`}
     >
       {/* City skyline banner with contact us text */}
-      <div className="relative w-full overflow-hidden pt-28 md:pt-33">
+      <div className="relative w-full overflow-hidden pt-16 md:pt-20">
         <h2 className="font-bodoni font-bold text-5xl md:text-7xl text-biru-3 text-center pb-8">
           Contact Us
         </h2>
@@ -64,7 +64,7 @@ const ContactUs: React.FC<ContactUsProps> = ({ className = "" }) => {
           </div>
 
           {/* Social media section */}
-          <div className="text-center pt-28 md:pt-33 font-plus-jakarta">
+          <div className="text-center pt-16 md:pt-20 font-plus-jakarta">
             <h2 className="font-bodoni font-bold text-5xl md:text-7xl text-biru-3 text-center pb-3">
               Social Media
             </h2>
@@ -108,7 +108,7 @@ const ContactUs: React.FC<ContactUsProps> = ({ className = "" }) => {
           </div>
 
           {/* Location */}
-          <div className="text-center pt-28 md:pt-33">
+          <div className="text-center pt-16 md:pt-20">
             <h2 className="font-bodoni font-bold text-5xl md:text-7xl text-biru-3 text-center pb-3">
               Location
             </h2>

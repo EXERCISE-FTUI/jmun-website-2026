@@ -11,9 +11,11 @@ const CouncilCard: React.FC<CouncilCardProps> = ({ council }) => {
   const {
     topic,
     logo,
+    expansion,
     organization,
     participant,
     level = "beginner",
+    location,
     description,
   } = council;
 
@@ -22,23 +24,30 @@ const CouncilCard: React.FC<CouncilCardProps> = ({ council }) => {
   };
 
   return (
-    <div className="w-full rounded-lg overflow-hidden">
-      {/* Top row: image and title section */}
-      <div className="flex flex-col md:flex-row items-center md:items-start gap-6 lg:p-6 pb-0">
-        <div className="flex-1 flex flex-col justify-center gap-2">
-          <h2 className="text-3xl lg:text-6xl font-extrabold font-bodoni text-white">
-            {organization}
-          </h2>
-          <p className="text-white font-bold text-lg lg:text-3xl font-bodoni">
-            Council Type: {capitalizeFirstLetter(level)} -{" "}
-            {formatParticipant(participant)}
-          </p>
-          <p className="font-bodoni font-bold text-xl lg:text-4xl">
-            &quot;{topic}&quot;
-          </p>
+    <div className="relative w-full flex justify-center items-center">
+      <div className="w-full lg:w-[1200px] h-[560px] bg-biru-1/65 rounded-4xl overflow-hidden flex flex-row py-7 pl-7">
+        <div className="w-full h-full flex flex-col gap-5">
+          <div className="w-full flex flex-col gap-1 pr-1">
+            <h1 className="text-3xl lg:text-7xl font-extrabold font-bodoni text-biru-3">
+              {organization}
+            </h1>
+            {expansion && <p className="font-bodoni font-bold text-biru-3 lg:text-2xl">
+              ({expansion})
+            </p>}
+            <p className="font-bodoni font-bold text-biru-3 lg:text-3xl">
+              &quot;{topic}&quot;
+            </p>
+          </div>
+
+          <div className="w-full overflow-y-auto no-scrollbar-bg pr-5">
+            <p className="text-biru-3 leading-relaxed font-plus-jakarta lg:text-lg text-justify">
+              {description}
+            </p>
+          </div>
         </div>
-        <div className="w-full md:w-1/3 flex items-center justify-center">
-          <div className="relative w-48 h-48">
+
+        <div className="w-[350px] h-full flex flex-col justify-center items-center">
+          <div className="relative w-full h-[300px]">
             <Image
               src={logo}
               alt={`${organization} logo`}
@@ -47,14 +56,29 @@ const CouncilCard: React.FC<CouncilCardProps> = ({ council }) => {
               className="max-w-full"
             />
           </div>
+
+          <div className="w-[220px] h-full flex flex-col items-center mt-4 gap-2 p-2">
+            <div className="w-full rounded-full py-1 flex justify-center items-center bg-biru-3 border-1 border-kuning">
+              <h1 className="text-3xl mb-0.5 font-bold font-bodoni text-white text-center">
+                {capitalizeFirstLetter(participant)}
+              </h1>
+            </div>
+
+            <div className="w-full rounded-full py-1 flex justify-center items-center bg-biru-3 border-1 border-kuning">
+              <h1 className="text-3xl mb-0.5 font-bold font-bodoni text-white text-center">
+                {capitalizeFirstLetter(level)}
+              </h1>
+            </div>
+
+            <div className="w-full rounded-full py-1 flex justify-center items-center bg-biru-3 border-1 border-kuning">
+              <h1 className="text-3xl mb-0.5 font-bold font-bodoni text-white text-center">
+                {capitalizeFirstLetter(location)}
+              </h1>
+            </div>
+          </div>
         </div>
       </div>
-      {/* Description below, full width */}
-      <div className="w-full lg:px-6 lg:pb-6 pt-4">
-        <p className="text-white leading-relaxed font-plus-jakarta lg:text-lg text-justify">
-          {description}
-        </p>
-      </div>
+
     </div>
   );
 };
