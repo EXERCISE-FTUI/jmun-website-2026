@@ -6,7 +6,7 @@ import WelcomingRemarks from "./components/home/WelcomingRemarks";
 import ContactUs from "./components/home/ContactUs";
 import GallerySection from "./components/home/GallerySection";
 import Sponsors from "./components/home/Sponsors";
-import heroBackground from "@/assets/HeroBackground.svg";
+import MainBackground from "@/assets/MainBackground.svg";
 import heroTitle from "@/assets/HeroTitle.svg";
 import patungDirgantara from "@/assets/PatungDirgantara.svg";
 
@@ -19,30 +19,29 @@ const montserrat = Montserrat({
 function HomePage() {
   return (
     <main className="w-full min-h-screen flex flex-col items-center justify-start">
-      <section
-        className={`relative w-full min-h-screen overflow-hidden ${montserrat.className}`}
-      >
+      {/* Fixed background — locked to viewport, content scrolls over it */}
+      <div className="fixed inset-0 -z-10" aria-hidden="true">
         <Image
-          src={heroBackground}
+          src={MainBackground}
           alt=""
           fill
           priority
           className="object-cover"
-          aria-hidden="true"
         />
+        <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-[#0f7f98]/45" />
+      </div>
 
-        <div
-          className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-[#0f7f98]/45"
-          aria-hidden="true"
-        />
+      <section
+        className={`relative w-full min-h-screen ${montserrat.className}`}
+      >
 
         <div className="relative z-10 w-full min-h-screen px-4 sm:px-6 md:px-12 pt-35 flex flex-col items-center justify-center">
-          
+
           <div className="w-full max-w-[1250px] flex flex-col items-center">
-            
+
             <div className="w-full rounded-[1.75rem] md:rounded-[2.25rem] bg-white/50 px-7 md:px-12 lg:px-12 py-12">
               <div className="grid grid-cols-1 md:grid-cols-2 items-center gap-9 md:gap-5">
-                
+
                 <div className="flex flex-col items-start justify-center">
                   <Image
                     src={heroTitle}
@@ -77,19 +76,10 @@ function HomePage() {
               </div>
             </div>
 
-            <div className="mt-2 text-center text-white italic leading-relaxed px-4">
-              <p className="text-xs md:text-sm font-light w-160">
-                Jl. Joe Klp. Tiga No. 56, RT. 07/RW. 03, Lenteng Agung, Kec.Jagakarsa, Kota Jakarta Selatan, DKI Jakarta, 12250.
-              </p>
-              <p className="mt-1 text-xs md:text-sm font-light">
-                © 2026 ISAFIS. All rights reserved
-              </p>
-            </div>
-            
           </div>
         </div>
       </section>
-      
+
       <WelcomingRemarks />
       <GallerySection />
       <Sponsors />

@@ -21,7 +21,7 @@
 
 @font-face {
   font-family: 'BodoniIf';
-  src: url('/fonts/BodoniIfBold-MVZx.ttf') format('truetype');
+  src: url('/fonts/BodoniflfBold-MVZx.ttf') format('truetype');
   font-weight: bold;
   font-style: normal;
 }
@@ -159,14 +159,22 @@
   --font-montserrat: 'Montserrat', serif;
 
   /* Primary Colors */
-  --color-red-dark: rgb(142, 13, 22);   /* #8E0D16 */
-  --color-red-bright: rgb(252, 53, 28); /* #FC351C */
-  --color-pink-dark: rgb(213, 58, 148); /* #D53A94 */
-  --color-pink-light: rgb(244, 155, 186); /* #F49BBA */
-  --color-deep-blue: #2C3E80; /* The dark blue shade */
-  --color-soft-beige: #E6E2C3; /* The light beige color */
-  --color-red-medium: #cf2c2c; /* #FC351C */
-  --color-pink-medium: #ff89e0; /* #F49BBA */
+  --color-red-dark: rgb(142, 13, 22);
+  /* #8E0D16 */
+  --color-red-bright: rgb(252, 53, 28);
+  /* #FC351C */
+  --color-pink-dark: rgb(213, 58, 148);
+  /* #D53A94 */
+  --color-pink-light: rgb(244, 155, 186);
+  /* #F49BBA */
+  --color-deep-blue: #2C3E80;
+  /* The dark blue shade */
+  --color-soft-beige: #E6E2C3;
+  /* The light beige color */
+  --color-red-medium: #cf2c2c;
+  /* #FC351C */
+  --color-pink-medium: #ff89e0;
+  /* #F49BBA */
 
   /* jmun 2026 */
   --color-biru-1: #C3EAE9;
@@ -187,10 +195,12 @@
   --radius-xl: 1rem;
 
   --animate-fade-in: fade-in 1.5s ease-in-out forwards;
+
   @keyframes fade-in {
     0% {
       opacity: 0;
     }
+
     100% {
       opacity: 100%;
     }
@@ -217,6 +227,8 @@ body {
 
 /* Hide scrollbar for IE, Edge and Firefox */
 .no-scrollbar {
-  -ms-overflow-style: none;  /* IE and Edge */
-  scrollbar-width: none;  /* Firefox */
+  -ms-overflow-style: none;
+  /* IE and Edge */
+  scrollbar-width: none;
+  /* Firefox */
 }
