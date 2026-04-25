@@ -119,6 +119,9 @@ const ContactUs: React.FC<ContactUsProps> = ({ className = "" }) => {
               <p className="mt-2">
                 © {new Date().getFullYear()} ISAFIS. All rights reserved
               </p>
+              <p className="mx-auto mt-2 text-xs md:text-sm opacity-80">
+                Developed by EXERCISE FTUI
+              </p>
             </div>
           </div>
         </div>
