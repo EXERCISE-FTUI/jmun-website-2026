@@ -1,6 +1,7 @@
 import React from "react";
 import ContactUs from "../components/about/ContactUs";
 import Image from "next/image";
+import HomeBackground from "@/assets/HomeBackground.png";
 
 function AboutPage() {
   return (
@@ -18,15 +19,16 @@ function AboutPage() {
         />
       </div>
 
-      <div
-        className="absolute inset-0 z-0 pointer-events-none"
-        style={{
-          backgroundImage: "url('/bg-batik.png')",
-          backgroundRepeat: "repeat-y",
-          backgroundSize: "100% auto",
-          backgroundPosition: "top center"
-        }}
-      />
+      <div className="fixed inset-0 z-0" aria-hidden="true">
+        <Image
+          src={HomeBackground}
+          alt=""
+          fill
+          priority
+          className="object-cover"
+        />
+        <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-[#0f7f98]/45" />
+      </div>
 
       <div className="relative w-full h-auto md:px-15 max-sm:mt-[-25px] z-10">
         <div className="relative w-full h-auto bg-biru-1/65 rounded-4xl flex flex-col pt-3 px-12 pb-5 max-md:px-6 scale-90">
