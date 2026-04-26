@@ -190,7 +190,7 @@ const Header = () => {
             onClick={handleLinkClick}
             className="hover:font-bold hover:scale-105 origin-left transition-all w-fit"
           >
-            FaQ's
+            FaQ&apos;s
           </Link>
         </nav>
       </aside>

@@ -122,8 +122,8 @@ function RegistrationPage() {
 
           <p className="text-white text-lg md:text-xl leading-relaxed text-center mb-8 font-medium font-plus-jakarta px-4">
             JMUN social night is way for everyone-not only delegates to
-            participate in JMUN's one of a series of events. This package
-            is a call for everyone who wishes to engage in JMUN's socials.
+            participate in JMUN&apos;s one of a series of events. This package
+            is a call for everyone who wishes to engage in JMUN&apos;s socials.
           </p>
 
           <div className="w-full max-w-md">

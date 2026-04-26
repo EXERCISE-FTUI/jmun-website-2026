@@ -1,6 +1,7 @@
 import { Council } from "@/types";
 import { capitalizeFirstLetter, changeDelimiter } from "@/utils";
 import React from "react";
+import Image from "next/image";
 
 type CouncilCardProps = Omit<Council, "description">;
 
@@ -25,10 +26,12 @@ const CouncilCard: React.FC<CouncilCardProps> = ({
             {organization}
           </h3>
           {logo ? (
-            <img
+            <Image
               src={logo.src}
               alt={`${organization} logo`}
-              className="w-auto h-16 mx-auto"
+              width={200}   
+              height={64}  
+              className="h-16 w-auto mx-auto"
             />
           ) : (
             <div className="w-16 h-16 mx-auto bg-amber-100 rounded-full flex items-center justify-center">

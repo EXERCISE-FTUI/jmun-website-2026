@@ -5,6 +5,7 @@ import "slick-carousel/slick/slick-theme.css";
 import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
 import useBreakpoint from "use-breakpoint";
 import { BREAKPOINTS } from "@/utils";
+import Image from "next/image";
 
 // Define strict types
 type ImageType = Readonly<{
@@ -114,10 +115,11 @@ export const ImageCarousel: React.FC<CarouselProps> = ({
         {images.map((image, index) => (
           <div key={index} className="outline-none px-2">
             <div className="aspect-[3/4] overflow-hidden rounded-2xl">
-              <img
+              <Image
                 src={image.src}
                 alt={image.alt}
-                className="w-full h-full object-cover"
+                fill
+                className="object-cover"
               />
             </div>
           </div>
