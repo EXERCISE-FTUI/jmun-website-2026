@@ -118,8 +118,11 @@ export const ImageCarousel: React.FC<CarouselProps> = ({
               <Image
                 src={image.src}
                 alt={image.alt}
-                fill
-                className="object-cover"
+                width={332}
+                height={443}
+                className="object-cover w-full h-full"
+                priority
+                unoptimized
               />
             </div>
           </div>
