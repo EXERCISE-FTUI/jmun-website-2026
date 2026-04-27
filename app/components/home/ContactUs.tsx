@@ -45,7 +45,7 @@ const ContactUs: React.FC<ContactUsProps> = ({ className = "" }) => {
                 target="_blank"
                 className="text-white text-base md:text-2xl underline hover:text-soft-beige transition-colors duration-300"
               >
-                jakartamun@isafis.or.id
+                businessaffairs.jmun@gmail.com
               </a>
             </div>
 
