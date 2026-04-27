@@ -68,41 +68,42 @@ const ContactUs: React.FC<ContactUsProps> = ({ className = "" }) => {
             <h2 className="font-bodoni font-bold text-5xl md:text-7xl text-biru-3 text-center pb-3">
               Social Media
             </h2>
-            <div className="flex justify-center space-x-8">
+            {/* Added flex-wrap, reduced mobile gap, and responsive icon sizes */}
+            <div className="flex flex-wrap justify-center gap-4 md:gap-8 mt-2">
               <a
                 href="https://www.instagram.com/jakartamun/"
                 target="_blank"
                 className="text-white hover:text-gray-200 transition-colors"
               >
-                <FaInstagram className="text-7xl" />
+                <FaInstagram className="text-4xl md:text-7xl" />
               </a>
               <a
                 href="https://twitter.com/jakartamun"
                 target="_blank"
                 className="text-white hover:text-gray-200 transition-colors"
               >
-                <FaXTwitter className="text-7xl" />
+                <FaXTwitter className="text-4xl md:text-7xl" />
               </a>
               <a
                 href="https://www.tiktok.com/@jakartamun"
                 target="_blank"
                 className="text-white hover:text-gray-200 transition-colors"
               >
-                <FaTiktok className="text-7xl" />
+                <FaTiktok className="text-4xl md:text-7xl" />
               </a>
               <a
                 href="https://www.facebook.com/jakartamun"
                 target="_blank"
                 className="text-white hover:text-gray-200 transition-colors"
               >
-                <FaFacebook className="text-7xl" />
+                <FaFacebook className="text-4xl md:text-7xl" />
               </a>
               <a
                 href="https://www.linkedin.com/company/jakartamun/"
                 target="_blank"
                 className="text-white hover:text-gray-200 transition-colors"
               >
-                <FaLinkedin className="text-7xl" />
+                <FaLinkedin className="text-4xl md:text-7xl" />
               </a>
             </div>
           </div>
@@ -112,14 +113,15 @@ const ContactUs: React.FC<ContactUsProps> = ({ className = "" }) => {
             <h2 className="font-bodoni font-bold text-5xl md:text-7xl text-biru-3 text-center pb-3">
               Location
             </h2>
-            <div className="mt-2 text-center text-white text-sm md:text-base font-light font-montserrat italic leading-relaxed px-4">
-              <p className="mx-auto w-160 leading-tight">
+            <div className="mt-2 text-center text-white text-sm md:text-base font-light font-montserrat italic leading-relaxed px-4 flex flex-col items-center">
+              {/* Removed strict w-160 and replaced with max-w-2xl for better wrapping */}
+              <p className="max-w-2xl leading-tight">
                 Jl. Joe Klp. Tiga No. 56, RT. 07/RW. 03, Lenteng Agung, Kec.Jagakarsa, Kota Jakarta Selatan, DKI Jakarta, 12250.
               </p>
               <p className="mt-2">
                 © {new Date().getFullYear()} ISAFIS. All rights reserved
               </p>
-              <p className="mx-auto mt-2 text-xs md:text-sm opacity-80">
+              <p className="mt-2 text-xs md:text-sm opacity-80">
                 Developed by EXERCISE FTUI
               </p>
             </div>

@@ -93,7 +93,6 @@ export default function FAQPage() {
 
       </div>
 
-      {/* Footer strictly kept at the bottom */}
       <div className="w-full relative z-10 mt-auto">
       <div className="border-b-2 border-white"></div>
         <ContactUs />

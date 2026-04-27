@@ -11,6 +11,7 @@ const Header = () => {
   const [isRegisterOpen, setIsRegisterOpen] = useState(false);
   
   const sidebarRef = useRef<HTMLElement>(null);
+  const buttonRef = useRef<HTMLButtonElement>(null);
   
   // Ref to store our timer so we can pause/cancel it
   const timerRef = useRef<ReturnType<typeof setTimeout> | null>(null);
@@ -23,8 +24,13 @@ const Header = () => {
     }
   }, []);
 
-  // Helper to start the 2-second countdown
+  // Helper to start the countdown
   const startCloseTimer = useCallback(() => {
+    // Disable auto-close entirely on mobile and tablet screens (under 1024px)
+    if (typeof window !== "undefined" && window.innerWidth < 1024) {
+      return;
+    }
+
     cancelCloseTimer(); // Clear any existing timers first to prevent overlap
     timerRef.current = setTimeout(() => {
       setIsOpen(false);
@@ -34,7 +40,13 @@ const Header = () => {
   // 1. Click-outside handler
   useEffect(() => {
     function handleClickOutside(event: MouseEvent) {
-      if (sidebarRef.current && !sidebarRef.current.contains(event.target as Node)) {
+      // Make sure we aren't clicking inside the sidebar AND aren't clicking the toggle button
+      if (
+        sidebarRef.current && 
+        !sidebarRef.current.contains(event.target as Node) &&
+        buttonRef.current &&
+        !buttonRef.current.contains(event.target as Node)
+      ) {
         setIsOpen(false);
       }
     }
@@ -64,7 +76,10 @@ const Header = () => {
     <>
       {/* Floating Menu Toggle Button */}
       <button
+        ref={buttonRef}
         onClick={() => setIsOpen(!isOpen)}
+        onMouseEnter={cancelCloseTimer} // PAUSE timer when mouse is on the button
+        onMouseLeave={startCloseTimer}  // RESTART timer when mouse leaves the button
         className="fixed top-8 left-6 z-[60] bg-transparent border-none outline-none cursor-pointer hover:opacity-75 transition-opacity"
         aria-label="Toggle Menu"
       >
@@ -99,14 +114,23 @@ const Header = () => {
       {/* Sliding Sidebar Drawer */}
       <aside
         ref={sidebarRef}
-        onMouseEnter={cancelCloseTimer} // PAUSE timer when mouse enters
-        onMouseLeave={startCloseTimer}  // RESTART timer when mouse leaves
+        onMouseEnter={cancelCloseTimer} // PAUSE timer when mouse enters sidebar
+        onMouseLeave={startCloseTimer}  // RESTART timer when mouse leaves sidebar
         className={`fixed top-0 left-0 h-screen w-56 bg-[#e3eae7] z-50 flex flex-col pt-24 px-6 shadow-[4px_0_24px_rgba(0,0,0,0.05)] overflow-y-auto transition-transform duration-300 ease-in-out ${
           isOpen ? "translate-x-0" : "-translate-x-full"
         }`}
       >
         {/* Vertical Navigation Links */}
         <nav className="flex flex-col gap-6 font-plus-jakarta text-[#0b4d66] text-xl italic font-medium">
+          
+          <Link 
+            href="/" 
+            onClick={handleLinkClick}
+            className="hover:font-bold hover:scale-105 origin-left transition-all w-fit"
+          >
+            Home
+          </Link>
+
           <Link 
             href="/about" 
             onClick={handleLinkClick}
