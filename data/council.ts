@@ -16,7 +16,7 @@ export const councils: Council[] = [
   {
     organization: "WHO",
     expansion: "World Health Organization",
-    logo: whologo, 
+    logo: whologo,
     topic: "Safeguarding Birth Rates: Combating Childhood Chronic Malnutrition",
     participant: "single",
     level: "beginner",
@@ -27,7 +27,7 @@ export const councils: Council[] = [
   {
     organization: "UNESCO",
     expansion: "UN Educational, Scientific and Cultural Organization",
-    logo: unescoLogo, 
+    logo: unescoLogo,
     topic: "Whose Heritage, Whose History? Resolving Competing Claims over Cultural Heritage",
     participant: "single",
     level: "beginner",
@@ -38,7 +38,7 @@ export const councils: Council[] = [
   {
     organization: "UNEP",
     expansion: "UN Environmental Programme",
-    logo: unepLogo, 
+    logo: unepLogo,
     topic:
       "Toxic Grounds, Erosive Waste: Cultivating Soil Remediation through Historical & Corporate Accountability",
     participant: "single",
@@ -50,7 +50,7 @@ export const councils: Council[] = [
   {
     organization: "ECOSOC",
     expansion: "United Nations Economic and Social Council",
-    logo: ecosocLogo, 
+    logo: ecosocLogo,
     topic:
       "Beyond the Cockpit: The Question of Granting More Decision-Making Power to Drivers",
     participant: "single",
@@ -62,7 +62,7 @@ export const councils: Council[] = [
   {
     organization: "UNHRC",
     expansion: "United Nations Human Rights Council",
-    logo: unhrcLogo, 
+    logo: unhrcLogo,
     topic:
       "Privacy In the Digital Age: The Limits of Data Collection and Protection",
     participant: "single",
@@ -74,7 +74,7 @@ export const councils: Council[] = [
   {
     organization: "KEMA",
     expansion: "Korean Entertainment Management Association",
-    logo: kemaLogo, 
+    logo: kemaLogo,
     topic:
       "The Seoul of K-Pop: Balancing Corporate Competition with Creative Freedom",
     participant: "single",
@@ -86,7 +86,7 @@ export const councils: Council[] = [
   {
     organization: "FAO",
     expansion: "Food and Agriculture Organization",
-    logo: faoLogo, 
+    logo: faoLogo,
     topic:
       "Food Security Optimalization Amidst Land Tenure Inaccessibility",
     participant: "single",
@@ -98,7 +98,7 @@ export const councils: Council[] = [
   {
     organization: "ICAO",
     expansion: "International Civil Aviation Organization",
-    logo: icaoLogo, 
+    logo: icaoLogo,
     topic:
       "Clearing Grey Skies and Promoting Prosperity: Reshaping the Global Aviation Climate Governance",
     participant: "single",
@@ -122,26 +122,26 @@ export const councils: Council[] = [
   {
     organization: "HCC",
     expansion: "Historical Crisis Council",
-    logo: hccLogo, 
+    logo: hccLogo,
     topic:
-      "Human Rights in Crisis: Assessing the Effectiveness of Human Rights Agreements in Escalating Global Conflicts",
+      "Enemies at the Gate: The Second Dutch Aggression",
     participant: "single",
     level: "beginner",
     location: "online",
     description:
-      "The global state of human rights has grown increasingly fragile, with conflicts and crises stripping millions of individuals of their dignity, safety, and basic freedoms. In 2024 alone, nearly 300 million people across 72 countries required humanitarian aid, as seen in the devastating crises in regions like Gaza and Haiti. Gaza has suffered relentless airstrikes, displacing families and leaving survivors with deep physical and emotional scars, while Haiti faces a humanitarian disaster fueled by gang violence and political instability, forcing over half a million people into displacement. These dire situations highlight the urgent need to protect the most vulnerable and reaffirm the global commitment to human rights. Despite the foundation laid by the Universal Declaration of Human Rights, disparities in cultural, political, and economic priorities, along with emerging challenges like digital surveillance and democratic backsliding, complicate its implementation. As one of six main committees at the General Assembly of the United Nations, it is up to the Social, Humanitarian, and Cultural (SOCHUM) committee to evaluate the effectiveness of human rights agreements amidst the escalation of global conflicts.",
+      "It is December 19, 1948. Despite the Renville Agreement signed just eleven months prior, Dutch paratroopers have descended upon Yogyakarta in Operation Crow, seizing the Republican capital and capturing President Sukarno and Vice President Mohammad Hatta. With the government dismantled and foreign powers deciding Indonesia’s fate in distant chambers, the committee must coordinate military resistance and secure international legitimacy before the Republic collapses entirely.​​​​​​​​​​​​​​​​",
   },
   {
     organization: "EUCO",
     expansion: "European Council",
-    logo: eucoLogo, 
+    logo: eucoLogo,
     topic:
-      "Human Rights in Crisis: Assessing the Effectiveness of Human Rights Agreements in Escalating Global Conflicts",
+      "Autonomy or Dependence? Justice and Power Asymmetries in Europe's Strategic Relationship with NATO",
     participant: "single",
     level: "beginner",
     location: "online",
     description:
-      "The global state of human rights has grown increasingly fragile, with conflicts and crises stripping millions of individuals of their dignity, safety, and basic freedoms. In 2024 alone, nearly 300 million people across 72 countries required humanitarian aid, as seen in the devastating crises in regions like Gaza and Haiti. Gaza has suffered relentless airstrikes, displacing families and leaving survivors with deep physical and emotional scars, while Haiti faces a humanitarian disaster fueled by gang violence and political instability, forcing over half a million people into displacement. These dire situations highlight the urgent need to protect the most vulnerable and reaffirm the global commitment to human rights. Despite the foundation laid by the Universal Declaration of Human Rights, disparities in cultural, political, and economic priorities, along with emerging challenges like digital surveillance and democratic backsliding, complicate its implementation. As one of six main committees at the General Assembly of the United Nations, it is up to the Social, Humanitarian, and Cultural (SOCHUM) committee to evaluate the effectiveness of human rights agreements amidst the escalation of global conflicts.",
+      "Europe's security has long been intertwined with NATO, an alliance that has provided collective defense and stability for decades. Yet the rise of new geopolitical challenges, shifting U.S. foreign policy priorities, and internal divisions within the continent have sparked debate over how dependent European nations should remain on the alliance. Some countries emphasize the need for continued reliance on NATO to guarantee security and deter aggression, while others advocate for greater strategic autonomy, investing in independent defense capabilities and regional cooperation. Delegates must navigate these competing perspectives to negotiate frameworks that balance collective security, national sovereignty, and Europe's role in global geopolitics.",
   },
   {
     organization: "Press Corps",
