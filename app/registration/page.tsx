@@ -33,7 +33,7 @@ function RegistrationButton({ text, href }: RegistrationButtonProps) {
 
 function RegistrationPage() {
   return (
-    <main className="relative flex flex-col justify-between w-full min-h-screen overflow-x-hidden">
+    <main className="relative flex flex-col justify-between w-full min-h-screen overflow-x-hidden overflow-y-hidden">
       
       {/* Fixed background taken from HomePage — locked to viewport, content scrolls over it */}
       <div className="fixed inset-0 -z-10" aria-hidden="true">
@@ -77,7 +77,7 @@ function RegistrationPage() {
           </div>
           
           {/* Visually Cropped Image Container */}
-          <div className="w-24 md:w-32 h-10 md:h-14 overflow-hidden flex justify-start items-center">
+          <div className="w-24 md:w-32 h-10 md:h-14 flex justify-start items-center">
             <Image 
               src={unLogo} 
               alt="UN and ISAFIS Logos" 
@@ -88,7 +88,7 @@ function RegistrationPage() {
       </div>
 
       {/* --- COMING SOON CONTENT --- */}
-      <div className="w-full flex grow items-center justify-center px-4 py-8 z-10">
+      <div className="w-full flex items-center justify-center px-4 py-8 z-10">
         <div className="w-full max-w-7xl flex flex-col md:flex-row items-center justify-center gap-12 lg:gap-24 mx-auto">
           
           {/* Coming Soon Card */}
