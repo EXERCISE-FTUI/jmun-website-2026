@@ -2,7 +2,8 @@ import React from "react";
 
 function Sponsors() {
     return (
-        <section className="w-full flex flex-col items-center justify-start pt-5 md:pt-10 px-4 md:px-10">
+        <section className="w-full hidden flex-col items-center justify-start pt-5 md:pt-10 px-4 md:px-10">
+            {/* hidden dulu, nanti jadiin flex */}
             <section className="w-full flex flex-col items-center justify-start pt-16 md:pt-20 px-4 md:px-10">
                 <h2 className="font-bodoni font-bold text-4xl md:text-7xl text-biru-3 mb-8 md:mb-12 text-center">
                     Our Sponsors
