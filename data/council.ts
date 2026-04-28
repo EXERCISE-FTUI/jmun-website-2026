@@ -127,7 +127,7 @@ export const councils: Council[] = [
       "Enemies at the Gate: The Second Dutch Aggression",
     participant: "single",
     level: "beginner",
-    location: "online",
+    location: "offline",
     description:
       "It is December 19, 1948. Despite the Renville Agreement signed just eleven months prior, Dutch paratroopers have descended upon Yogyakarta in Operation Crow, seizing the Republican capital and capturing President Sukarno and Vice President Mohammad Hatta. With the government dismantled and foreign powers deciding Indonesia’s fate in distant chambers, the committee must coordinate military resistance and secure international legitimacy before the Republic collapses entirely.​​​​​​​​​​​​​​​​",
   },
