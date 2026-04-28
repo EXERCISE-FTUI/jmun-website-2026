@@ -57,9 +57,9 @@ const CouncilCard: React.FC<CouncilCardProps> = ({ council }) => {
               <Image
                 src={logo}
                 alt={`${organization} logo`}
-                layout="fill"
+                fill
                 sizes="100vw"
-                objectFit="contain"
+                style={{ objectFit: "contain" }}
                 className="max-w-full"
               />
             </div>
@@ -77,9 +77,9 @@ const CouncilCard: React.FC<CouncilCardProps> = ({ council }) => {
             <Image
               src={logo}
               alt={`${organization} logo`}
-              layout="fill"
+              fill
               sizes="100vw"
-              objectFit="contain"
+              style={{ objectFit: "contain" }}
               className="max-w-full"
             />
           </div>

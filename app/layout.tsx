@@ -18,6 +18,16 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: "Jakarta International Model United Nations 2026",
   description: "Jakarta International Model United Nations 2026",
+  openGraph: {
+    images: [
+      {
+        url: '/logo.png', 
+        width: 800,
+        height: 800,
+        alt: 'Jakarta International Model United Nations Logo',
+      },
+    ],
+  },
 };
 
 export default function RootLayout({
