@@ -58,6 +58,7 @@ const CouncilCard: React.FC<CouncilCardProps> = ({ council }) => {
                 src={logo}
                 alt={`${organization} logo`}
                 layout="fill"
+                sizes="100vw"
                 objectFit="contain"
                 className="max-w-full"
               />
