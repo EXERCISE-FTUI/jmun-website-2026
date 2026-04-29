@@ -25,17 +25,6 @@ export const councils: Council[] = [
       "A global health issue that has persisted over the decades, inadequate nutrition and unequal access to basic services have silently shaped the destinies of societies. Nowhere is this more evident than in the persistence of stunting, a condition rooted not only in food security, but also in poverty, limited healthcare, unsafe sanitation, and social inequality. On one side of the country, there are millions of children facing impaired growth due to chronic malnutrition, but on the other, maternal undernutrition and limited prenatal care perpetuate intergenerational stunting. As pressing global development challenges, stunting demands a coordinated action to ensure every child regardless of geography is given an equal opportunity to reach their full growth. Thus, these realities raise a critical question: what can the global community do to protect the physical and cognitive development of its youngest generation?",
   },
   {
-    organization: "UNESCO",
-    expansion: "UN Educational, Scientific and Cultural Organization",
-    logo: unescoLogo,
-    topic: "Whose Heritage, Whose History? Resolving Competing Claims over Cultural Heritage",
-    participant: "single",
-    level: "beginner",
-    location: "online",
-    description:
-      "Throughout history, societies have competed for recognition and possession of cultural heritage. Be it for a sense of identity, legitimacy, or historical continuity, these conflicts, when left unresolved, often evolve for the worse. In Southeast Asia, online forums erupt over ownership of traditional fashion. In the Middle East, overlapping culinary traditions beget competing claims. In European museums, African jewels and cultural artifacts are under intense pressure for repatriation. These examples raise a simple question: How should cultural heritage be managed when claims conflict? As the global community’s leading body for cultural protection, UNESCO must facilitate a solution that can transmute these sources of conflict into heirlooms of a shared legacy.",
-  },
-  {
     organization: "UNEP",
     expansion: "UN Environmental Programme",
     logo: unepLogo,
@@ -84,18 +73,6 @@ export const councils: Council[] = [
       "The global rise of the Korean Pop industry has transformed from merely a regional music scene into a billion-dollar global culture industry that’s driven by intensive corporate investment, extreme global marketing, and tightly managed production systems. While this model was able to exceed the international expectations, it raised concerns over the creative autonomy of the artists that operate under restricted contracts. From songwriting to concept design to self-expression, decisions are frequently centralized within entertainment corporations. Hence, this blurs the line between artistic expression and corporate control. With that being said, it is up to the Korea Entertainment Management Association (KEMA) to ensure artists’ creative freedom and corporate competition are adequately balanced.",
   },
   {
-    organization: "FAO",
-    expansion: "Food and Agriculture Organization",
-    logo: faoLogo,
-    topic:
-      "Food Security Optimalization Amidst Land Tenure Inaccessibility",
-    participant: "single",
-    level: "intermediate",
-    location: "online",
-    description:
-      "Land tenure is one of the most important and contentious pillars of development since it has shaped power, social stability, and prosperity. While the weak or unequal land tenure systems frequently deepen poverty and conflict, a secure land tenure decides who may access resources, produce foods, and invest in numerous livelihoods. Furthermore, through normative frameworks that promote responsible land governance, the Food and Agriculture Organization (FAO) significantly contributes to the advancement of secure and equitable land tenure. Therefore, as a cornerstone of food security and rural development, what can the FAO accomplish in order to achieve sustainable development when access to land remains unjust? ",
-  },
-  {
     organization: "ICAO",
     expansion: "International Civil Aviation Organization",
     logo: icaoLogo,
@@ -132,6 +109,40 @@ export const councils: Council[] = [
       "It is December 19, 1948. Despite the Renville Agreement signed just eleven months prior, Dutch paratroopers have descended upon Yogyakarta in Operation Crow, seizing the Republican capital and capturing President Sukarno and Vice President Mohammad Hatta. With the government dismantled and foreign powers deciding Indonesia’s fate in distant chambers, the committee must coordinate military resistance and secure international legitimacy before the Republic collapses entirely.​​​​​​​​​​​​​​​​",
   },
   {
+    organization: "Press Corps",
+    expansion: "",
+    logo: pressLogo, // Press emblem with flag
+    topic: "", // No topic visible in the image for Press Corps
+    participant: "single",
+    level: "beginner",
+    location: "offline",
+    description:
+      "Within the dynamic environment of discussions and negotiations addressing pressing global issues, the Press Corps serves as the fourth pillar of democracy. Its responsibilities extend well beyond the publication of written reports; Press Corps delegates are entrusted with observing and reporting on council deliberations, official events, and emerging crises, as well as facilitating press conferences in a manner that respects diplomatic protocol and institutional integrity. While granted the freedom to develop original narratives and diverse perspectives, delegates are guided by principles of objectivity, ethical responsibility, and cultural sensitivity.",
+  },
+  {
+    organization: "UNESCO",
+    expansion: "UN Educational, Scientific and Cultural Organization",
+    logo: unescoLogo,
+    topic: "Whose Heritage, Whose History? Resolving Competing Claims over Cultural Heritage",
+    participant: "single",
+    level: "beginner",
+    location: "online",
+    description:
+      "Throughout history, societies have competed for recognition and possession of cultural heritage. Be it for a sense of identity, legitimacy, or historical continuity, these conflicts, when left unresolved, often evolve for the worse. In Southeast Asia, online forums erupt over ownership of traditional fashion. In the Middle East, overlapping culinary traditions beget competing claims. In European museums, African jewels and cultural artifacts are under intense pressure for repatriation. These examples raise a simple question: How should cultural heritage be managed when claims conflict? As the global community’s leading body for cultural protection, UNESCO must facilitate a solution that can transmute these sources of conflict into heirlooms of a shared legacy.",
+  },
+  {
+    organization: "FAO",
+    expansion: "Food and Agriculture Organization",
+    logo: faoLogo,
+    topic:
+      "Food Security Optimalization Amidst Land Tenure Inaccessibility",
+    participant: "single",
+    level: "intermediate",
+    location: "online",
+    description:
+      "Land tenure is one of the most important and contentious pillars of development since it has shaped power, social stability, and prosperity. While the weak or unequal land tenure systems frequently deepen poverty and conflict, a secure land tenure decides who may access resources, produce foods, and invest in numerous livelihoods. Furthermore, through normative frameworks that promote responsible land governance, the Food and Agriculture Organization (FAO) significantly contributes to the advancement of secure and equitable land tenure. Therefore, as a cornerstone of food security and rural development, what can the FAO accomplish in order to achieve sustainable development when access to land remains unjust? ",
+  },
+  {
     organization: "EUCO",
     expansion: "European Council",
     logo: eucoLogo,
@@ -142,17 +153,6 @@ export const councils: Council[] = [
     location: "online",
     description:
       "Europe's security has long been intertwined with NATO, an alliance that has provided collective defense and stability for decades. Yet the rise of new geopolitical challenges, shifting U.S. foreign policy priorities, and internal divisions within the continent have sparked debate over how dependent European nations should remain on the alliance. Some countries emphasize the need for continued reliance on NATO to guarantee security and deter aggression, while others advocate for greater strategic autonomy, investing in independent defense capabilities and regional cooperation. Delegates must navigate these competing perspectives to negotiate frameworks that balance collective security, national sovereignty, and Europe's role in global geopolitics.",
-  },
-  {
-    organization: "Press Corps",
-    expansion: "",
-    logo: pressLogo, // Press emblem with flag
-    topic: "", // No topic visible in the image for Press Corps
-    participant: "single",
-    level: "beginner",
-    location: "offline",
-    description:
-      "Within the dynamic environment of discussions and negotiations addressing pressing global issues, the Press Corps serves as the fourth pillar of democracy. Its responsibilities extend well beyond the publication of written reports; Press Corps delegates are entrusted with observing and reporting on council deliberations, official events, and emerging crises, as well as facilitating press conferences in a manner that respects diplomatic protocol and institutional integrity. While granted the freedom to develop original narratives and diverse perspectives, delegates are guided by principles of objectivity, ethical responsibility, and cultural sensitivity.",
   },
 ];
 
