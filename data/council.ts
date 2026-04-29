@@ -52,7 +52,7 @@ export const councils: Council[] = [
     expansion: "United Nations Economic and Social Council",
     logo: ecosocLogo,
     topic:
-      "Beyond the Cockpit: The Question of Granting More Decision-Making Power to Drivers",
+      "Building Resilient Safety Nets: Expanding Socio-Economic Protections for Informal Employees",
     participant: "single",
     level: "beginner",
     location: "offline",
@@ -126,7 +126,7 @@ export const councils: Council[] = [
     topic:
       "Enemies at the Gate: The Second Dutch Aggression",
     participant: "single",
-    level: "beginner",
+    level: "advanced",
     location: "offline",
     description:
       "It is December 19, 1948. Despite the Renville Agreement signed just eleven months prior, Dutch paratroopers have descended upon Yogyakarta in Operation Crow, seizing the Republican capital and capturing President Sukarno and Vice President Mohammad Hatta. With the government dismantled and foreign powers deciding Indonesia’s fate in distant chambers, the committee must coordinate military resistance and secure international legitimacy before the Republic collapses entirely.​​​​​​​​​​​​​​​​",
@@ -149,6 +149,7 @@ export const councils: Council[] = [
     logo: pressLogo, // Press emblem with flag
     topic: "", // No topic visible in the image for Press Corps
     participant: "single",
+    level: "beginner",
     location: "offline",
     description:
       "Within the dynamic environment of discussions and negotiations addressing pressing global issues, the Press Corps serves as the fourth pillar of democracy. Its responsibilities extend well beyond the publication of written reports; Press Corps delegates are entrusted with observing and reporting on council deliberations, official events, and emerging crises, as well as facilitating press conferences in a manner that respects diplomatic protocol and institutional integrity. While granted the freedom to develop original narratives and diverse perspectives, delegates are guided by principles of objectivity, ethical responsibility, and cultural sensitivity.",

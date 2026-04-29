@@ -49,9 +49,9 @@ const CouncilCard: React.FC<CouncilCardProps> = ({ council }) => {
                 </h1>
               </div>
             </div>
-            <p className="font-bodoni font-bold text-biru-3 lg:text-3xl">
+            {topic !== "" && <p className="font-bodoni font-bold text-biru-3 lg:text-3xl">
               &quot;{topic}&quot;
-            </p>
+            </p>}
 
             <div className="md:hidden relative w-full h-[192px]">
               <Image
